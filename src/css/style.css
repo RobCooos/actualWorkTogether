@@ -1,0 +1,269 @@
+@import url("fonts.css");
+@import url("default.css");
+
+/* основные стили */
+* {
+  font-family: "SF Pro";
+  color: white;
+}
+body {
+  background-color: #162831;
+  
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/* стили header */
+header {
+  padding: 40px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #162831;
+  box-shadow: 0 5px 16px rgba(1, 138, 190, 0.25);
+}
+.btn {
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #018abe;
+  padding: 9px 15px;
+  border-radius: 3px;
+  transition: 400ms;
+  z-index: 2;
+}
+.btn:hover {
+  box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+.btn.invert {
+  color: rgb(1, 138, 190);
+  background-color: white;
+}
+.btn.invert:hover {
+  box-shadow: 0 0 6px 4px rgba(1, 138, 190, 0.15);
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+  font-size: 14px;
+}
+a {
+  transition: 400ms;
+}
+nav a:hover {
+  color: #018abe;
+}
+
+/* main and sections */
+main {
+  margin-top: 144px;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+section.main {
+  height: 600px;
+  background-image: url("../img/main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  justify-content: center;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  font-size: 24px;
+}
+.title {
+  gap: 50px;
+}
+.main {
+  gap: 50px;
+}
+.main-text {
+  font-size: 64px;
+  text-align: center;
+}
+.map-card {
+  background: #018abe;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  border-radius: 15px;
+  width: 350px;
+}
+.container-map-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 608px;
+}
+iframe {
+  border-radius: 15px;
+}
+.map {
+  border-radius: 15px;
+}
+.px14 {
+  font-size: 14px;
+}
+.card-element {
+  display: flex;
+  gap: 5px;
+}
+.card-svgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.card-ps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card-icon {
+  width: 20px;
+  height: 20px;
+}
+.water-box {
+  background-image: url(../img/section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 416px;
+  height: 258px;
+
+  display: flex;
+  align-items: flex-end;
+  border-radius: 15px;
+}
+.water-box p {
+  margin: 40px 40px;
+}
+.seans-grid {
+  display: grid;
+  grid-template-columns: 416px 416px 416px;
+  grid-template-rows: 258px 258px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.hight-height {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 546px;
+}
+.px42 {
+  font-size: 42px;
+}
+.seans-title-container,
+.ob-title-container,
+.price-title-container {
+  gap: 20px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.ob-grid {
+  display: grid;
+  grid-template-columns: 526px 526px;
+  grid-template-rows: 365px 365px;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.water-box.ob {
+  width: 526px;
+  height: 365px;
+}
+.px34 {
+  font-size: 34px;
+}
+.px16 {
+  font-size: 16px;
+}
+.text-box {
+  width: 526px;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.price-svgs {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.name-price {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gup-price);
+}
+.price-price {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gup-price);
+  margin-left: 40px;
+}
+.px25 {
+  font-size: 25px;
+}
+.price-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price-title-container {
+  display: flex;
+  justify-content: center;
+}
+:root {
+  --gup-price: 40px;
+}
+.px29 {
+  font-size: 29px;
+}
+.kupon-box {
+  width: 526px;
+  height: 455px;
+  display: flex;
+  flex-direction: column;
+}
+.kupon-box img {
+  width: 526px;
+  height: 396px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  justify-content: center;
+}
+.price-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}

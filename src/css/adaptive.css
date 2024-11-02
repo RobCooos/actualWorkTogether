@@ -1,0 +1,96 @@
+@import url(style.css);
+/*Laptops*/
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 0 16px;
+  }
+  .seans-grid {
+    grid-template-columns: 33% 33% 33%;
+  }
+  .water-box {
+    width: 100%;
+  }
+  .map {
+    width: 48%;
+  }
+  .map iframe {
+    width: 100%;
+  }
+  .ob-grid {
+    grid-template-columns: 48% 48%;
+  }
+}
+
+/*Tablets*/
+@media screen and (max-width: 850px) {
+  p {
+    font-size: 18px;
+  }
+  .water-box p {
+    margin: 20px;
+  }
+  .price-grid {
+    grid-template-columns: 100%;
+  }
+  .text-box {
+    align-items: center;
+    margin: 0 auto;
+  }
+  .kupon-box {
+    margin: 0 auto;
+  }
+  .map-section {
+    flex-direction: column;
+  }
+  .map {
+    width: 100%;
+  }
+  .container-map-cards {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+  }
+  .map-card {
+    width: 48%;
+    padding: 4%;
+  }
+}
+
+/*Phones*/
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .main-text {
+    font-size: 36px;
+  }
+  section.main {
+    height: 300px;
+  }
+  .px42 {
+    font-size: 24px;
+  }
+  .seans-grid {
+    grid-template-columns: none;
+    grid-template-rows: 0;
+    width: 100%;
+  }
+  .hight-height,
+  .water-box {
+    height: 150px;
+  }
+  .water-box.ob {
+    display: none;
+  }
+  .ob-grid {
+    display: block;
+  }
+  .text-box {
+    height: auto;
+    width: auto;
+    align-items: flex-start;
+  }
+  .text-box:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
